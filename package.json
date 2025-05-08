@@ -3,6 +3,7 @@
   "displayName": "VSColorCode",
   "description": "Random coloured VSCode instances",
   "publisher": "PradhulDev",
+  "icon": "icon.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.99.0"
@@ -10,7 +11,7 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [ "onStartupFinished", "onCommand:vscolorcode.colorcode"],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
