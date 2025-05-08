@@ -17,7 +17,7 @@
     "commands": [
       {
         "command": "vscolorcode.colorcode",
-        "title": "VS Color Code"
+        "title": "VSColorCode: Set Random Window Bar Colors"
       }
     ]
   },
