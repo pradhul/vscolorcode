@@ -3,6 +3,10 @@
   "displayName": "VSColorCode",
   "description": "Random coloured VSCode instances",
   "publisher": "PradhulDev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pradhul/vscolorcode"
+  },
   "icon": "icon.png",
   "version": "0.0.1",
   "engines": {
