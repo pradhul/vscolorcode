@@ -1,5 +1,11 @@
 import * as vscode from "vscode";
 
+/**
+ * Array of muted color pairs for status bar customization.
+ * Each entry is an array with two elements:
+ * - [0]: Background color in hex format
+ * - [1]: Foreground (text) color in hex format
+ */
 const mutedStatusBarColors = [
   ["#6a8caf", "#ffffff"], //dustyBlue
   ["#78866b", "#ffffff"], //mutedOlive
@@ -13,9 +19,18 @@ const mutedStatusBarColors = [
   ["#8da399", "#000000"], //paleForestGreen
 ];
 
+/**
+ * Returns a randomly selected color pair from the mutedStatusBarColors array.
+ * @returns {string[]} An array containing background color at index 0 and foreground color at index 1
+ */
 const getRandomColor = (): string[] =>
   mutedStatusBarColors.at(Math.floor(Math.random() * mutedStatusBarColors.length))!;
 
+/**
+ * Updates the VS Code workspace color customizations with the selected color pair.
+ * Applies the colors to status bar and title bar elements.
+ * @param {string[]} selectedColor - Array containing background color at index 0 and foreground color at index 1
+ */
 const updateColors = (selectedColor: string[]): void => {
   console.log("Current Color", selectedColor);
   const config = vscode.workspace.getConfiguration();
@@ -37,6 +52,11 @@ const updateColors = (selectedColor: string[]): void => {
   );
 };
 
+/**
+ * Activates the extension.
+ * Registers the 'vscolorcode.colorcode' command and applies a random color to the workspace.
+ * @param {vscode.ExtensionContext} context - The context provided by VS Code on activation
+ */
 export function activate(context: vscode.ExtensionContext) {
   const disposable = vscode.commands.registerCommand("vscolorcode.colorcode", () => {
     const selectedColor: string[] = getRandomColor();

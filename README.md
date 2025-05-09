@@ -1,71 +1,55 @@
-# vscolorcode README
+# VS Color Code
 
-This is the README for your extension "vscolorcode". After writing up a brief description, we recommend including the following sections.
+A simple VS Code extension that randomly applies muted color themes to your workspace's status bar and title bar. This helps you visually distinguish between different projects or workspaces at a glance.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Automatically applies a random muted color theme to your workspace on startup
+- Provides a command to change the color theme on demand
+- Uses carefully selected color pairs that are easy on the eyes
+- Customizes both status bar and title bar for a consistent look
 
-For example if there is an image subfolder under your extension project workspace:
+![VS Color Code in action](images/vscolorcode-demo.png)
 
-\!\[feature X\]\(images/feature-x.png\)
+> Note: The image above is a placeholder. Replace it with an actual screenshot of your extension in action.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Usage
 
-## Requirements
+1. The extension automatically applies a random color to your workspace when VS Code starts
+2. To change the color manually, open the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS)
+3. Type "Color Code: Apply Random Color" and press Enter
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Commands
 
-## Extension Settings
+This extension contributes the following command:
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+* `vscolorcode.colorcode`: Apply a random color to the workspace's status bar and title bar
 
-For example:
+## How It Works
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+The extension applies a randomly selected color pair from a curated list of muted colors to your workspace's status bar and title bar. The colors are selected to be visually pleasing and easy to distinguish between different projects.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Initial release of VS Color Code:
+- Random color application on startup
+- Command to change colors on demand
+- 10 carefully selected muted color pairs
 
 ---
 
-## Following extension guidelines
+## Contributing
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+Contributions are welcome! Here are some ways you can contribute:
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+- Report bugs and feature requests
+- Submit pull requests with bug fixes or new features
+- Suggest new color pairs that follow the muted theme aesthetic
 
-## Working with Markdown
+## License
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+This extension is licensed under the [MIT License](LICENSE).
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy your colorful workspaces!**
