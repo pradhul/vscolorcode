@@ -11,8 +11,6 @@ A simple VS Code extension that randomly applies muted color themes to your work
 
 ![VS Color Code in action](demo.png)
 
-> Note: The image above is a placeholder. Replace it with an actual screenshot of your extension in action.
-
 ## Usage
 
 1. The extension automatically applies a random color to your workspace when VS Code starts
