@@ -9,7 +9,7 @@ A simple VS Code extension that randomly applies muted color themes to your work
 - Uses carefully selected color pairs that are easy on the eyes
 - Customizes both status bar and title bar for a consistent look
 
-![VS Color Code in action](images/vscolorcode-demo.png)
+![VS Color Code in action](demo.png)
 
 > Note: The image above is a placeholder. Replace it with an actual screenshot of your extension in action.
 
